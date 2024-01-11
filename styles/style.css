@@ -1536,11 +1536,11 @@ form>textarea:hover{
     }
 }
 @media (max-width: 426px){
-    .up_banner,
+    /* .up_banner,
     .advantages_wrapper,
     .form__wrapper {
         height: 100vh;
-    }
+    } */
     .up_banner{
         padding-top: 100px;
     }
