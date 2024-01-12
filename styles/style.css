@@ -3,7 +3,7 @@
     --yellow-color: #FDC915;
     --grey-text: #616161;
     --grey_light-color: #727171;
-    --grey_light2-color: #72717178;
+    --grey_light2-color: #72717181;
     --grey_category: #F4F5F6;
 
 }
@@ -12,9 +12,9 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/* body{
+body{
     overflow-x: hidden;
-} */
+}
 
 .container{
     width: 100%;
@@ -930,6 +930,7 @@ transition: width 0.2s 0.15s linear, height 0.15s linear, opacity 0s 0.45s;
     z-index: 35;
 }
 .modal {
+    background-color: var(--grey_light2-color);
     pointer-events: none;
     opacity: 0;
     transform: translateY(-100%);
@@ -940,9 +941,7 @@ transition: width 0.2s 0.15s linear, height 0.15s linear, opacity 0s 0.45s;
     height: 100%;
     top: 0;
     overflow-y: hidden;
-
 }
-
 .modal.modal-an {
     z-index: 1;
     animation: modalAnimClose .3s linear forwards;
@@ -953,7 +952,6 @@ transition: width 0.2s 0.15s linear, height 0.15s linear, opacity 0s 0.45s;
     pointer-events: initial;
     animation: modalAnimOpen .3s linear forwards;
 }
-
 @keyframes modalAnimOpen {
     0% {
         opacity: 0;
@@ -978,19 +976,21 @@ transition: width 0.2s 0.15s linear, height 0.15s linear, opacity 0s 0.45s;
 }
 .modal-content {
     background-color: #fefefe;
-    margin: 90px auto;
-    padding: 60px;
-    border-radius: 40px;
-    width: 715px;
-    height: 628px;
-    text-align: center;
+    margin: 120px auto;
+    padding: 70px 0;
+    width: 60%;
+    height: fit-content;
     position: relative;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 100px;
 }
 #form{
     display: flex;
     flex-direction: column;
     position: relative;
-
+    padding: 0 0 0 100px;
 }
 #form>label{
     text-align: left;
@@ -1002,11 +1002,6 @@ form>textarea{
     margin-bottom: 10px;
     padding: 6px;
     outline: none;
-    /*transition: all .3s;*/
-}
-
-form>input:hover,
-form>textarea:hover{
 }
 
 .close {
@@ -1019,7 +1014,6 @@ form>textarea:hover{
     float: right;
     transition: all .3s;
 }
-
 .close:hover,
 .close:focus {
     color: black;
@@ -1033,68 +1027,81 @@ form>textarea:hover{
     color: #000000;
     margin-bottom: 15px;
 }
-.input-text{
-    font-weight: 700;
+.form__text{
+    color: var(--grey-text);
     font-size: 20px;
-    color: #000000;
-    margin-bottom: 8px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 30px;
 }
-#comment{
-    height: 67px;
+.input-text{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 10px;
+    border-bottom: 1px solid var(--grey_light2-color);
+    margin-bottom: 40px;
 }
-#comment::placeholder{
-    font-weight: 600;
-    font-size: 16px;
-    color: #8C8C8C;
-    display: flex;
-    align-items: center;
-}
-#submit{
-    margin-top: 20px;
-    width: fit-content;
-    font-weight: 600;
-    font-size: 18px;
-    text-align: center;
-    color: #FFFFFF;
-    padding: 10px 20px;
-    transition: all 0.3s;
-}
-#submit:hover{
-    color: #6FA3D4;
-    background: #FFFFFF;
-}
-.form-contact {
-    position: absolute;
-    right: 4px;
-    bottom: -31px;
-}
-.form-list {
-    display: flex;
-    column-gap: 3px;
-    justify-content: flex-end;
-}
-.freelance-form, .whatsapp-form, .viber-form, .telegram-form {
-    width: 32px;
-    height: 32px;
-    border: 2px solid #000000;
-    border-radius: 50%;
-    padding: 6px;
-    transition: all .3s;
-}
-.freelance-form:hover,
-.whatsapp-form:hover,
-.viber-form:hover,
-.telegram-form:hover {
-    border: 2px solid ;
-}
-.form-number:hover{
-}
-.form-number{
-    font-weight: 600;
-    font-size: 19px;
-    transition: all .3s;
 
+.form__title{
+    color: var(--black-color);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 10px;
 }
+#dropdown{
+    width: 100%;
+}
+.form__page__submit--modal{
+    padding: 15px 40px 40px 40px;
+}
+.form-contacts {
+    width: inherit;
+    padding: 60px 50px 60px 50px;
+    color: #fff;
+    background-color: var(--black-color);
+}
+.form-contacts__title{
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 50px;
+}
+.form-contacts__contacts-list{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.form-contacts__contacts-list__link{
+    display: flex;
+    gap: 15px;
+}
+.form-contacts__contacts-list__text{
+    color: #fff;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: all .3s ease-in-out;
+}
+.form-contacts__contacts-list__text:hover{
+    color: var(--yellow-color);
+}
+.select-dropdown option{
+    font-size: 22px;
+    background-color: #fff;
+    color: var(--black-color);
+    width: 100%;
+  }
+.select-dropdown option:hover{
+    background-color: var(--grey_light-color);
+}
+
 .scroll-hidden { overflow: hidden }
 
 
@@ -1129,7 +1136,14 @@ form>textarea:hover{
     }
 }
 /* media max */
-
+@media (max-width: 1800px){
+    .modal-content {
+        padding: 40px 0;
+    }
+    #form {
+        padding: 0 0 0 60px;
+    }
+}
 @media (max-width: 1695px){
     .swiper__slide__title {
         font-size: 24px;
@@ -1163,6 +1177,19 @@ form>textarea:hover{
         height: auto;
     }
 }
+@media (max-width: 1500px) {
+    .form__title {
+        font-size: 32px;
+    }
+    .form__text {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .form-contacts {
+        padding: 30px 40px;
+    }
+}
+
 @media (max-width: 1450px) {
     .statistic__box > svg {
         width: 20%;
@@ -1210,6 +1237,15 @@ form>textarea:hover{
     }
 
 }
+@media (max-width: 1255px){
+    .modal-content {
+        margin: 100px auto;
+        padding: 35px 0;
+        width: 60%;
+        gap: 30px;
+    }
+}
+
 @media (max-width: 1220px){
     .form__page {
         padding: 65px 122px 65px 87px;
@@ -1251,7 +1287,25 @@ form>textarea:hover{
         gap: 20px;
         width: 90%;
     }
-    
+    .form-contacts {
+        padding: 30px 10px;
+    }
+    #form {
+        padding: 0 0 0 30px;
+        max-width: 55%;
+    }
+    .form-contacts__title {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+    .form-contacts__contacts-list__text {
+        font-size: 16px;
+    }
+    .input-text {
+        font-size: 18px;
+        padding: 7px;
+        margin-bottom: 15px;
+    }
 }
 @media (max-width: 1150px){
    
@@ -1294,6 +1348,12 @@ form>textarea:hover{
     .statistics__wrapper {
         width: 85%;
         margin-left: 50px;
+    }
+    .modal-content {
+        margin: 100px auto;
+        padding: 20px 0;
+        width: 70%;
+        gap: 20px;
     }
     
 }
@@ -1367,6 +1427,25 @@ form>textarea:hover{
     .form__motto__text {
         font-size: 42px;
     }
+    .form-contacts__contacts-list__text,
+    .form__text{
+        font-size: 14px;
+    }
+    .form__text{
+        margin-bottom: 10px;
+    }
+    .form__title {
+        font-size: 22px;
+    }
+    .form__page__submit--modal {
+        padding: 5px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .modal-content {
+        padding-top: 35px;
+    }
+    
 }
 @media(max-width: 850px){
     .advantages_boxes {
@@ -1489,6 +1568,27 @@ form>textarea:hover{
         margin-top: 30px;
         padding: 40px;
     }
+    .close {
+        position: absolute;
+        right: 9px;
+        top: -10px;
+        font-weight: 600;
+        font-size: 45px;
+        color: #000000;
+        float: right;
+        transition: all .3s;
+    }
+    .modal-content {
+        padding-top: 30px;
+    }
+    .select-dropdown option{
+        font-size: 16px;
+      }
+      .input-text {
+        font-size: 14px;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
     
 }
 @media (max-width: 620px){
@@ -1508,6 +1608,24 @@ form>textarea:hover{
     }
     .statistics__num {
         font-size: 42px;
+    }
+    .form__text {
+        display: none;
+    }
+    .modal-content {
+        margin: 64px auto;
+    }
+    #form {
+        padding: 0 0 0 30px;
+        max-width: 45%;
+    }
+    .modal-content {
+        flex-direction: column;
+        margin: 64px auto;
+    }
+    #form {
+        padding: 0 20px;
+        max-width: 100%;
     }
 
 }
@@ -1534,6 +1652,9 @@ form>textarea:hover{
     .statistics__num {
         font-size: 50px;
     }
+    .form-contacts {
+        width: 90%;
+    }
 }
 @media (max-width: 426px){
     /* .up_banner,
@@ -1541,15 +1662,15 @@ form>textarea:hover{
     .form__wrapper {
         height: 100vh;
     } */
-    .up_banner{
+    /* .up_banner{
         padding-top: 100px;
-    }
-    .up_banner__content {
+    } */
+    /* .up_banner__content {
         padding: 0 30px;
-    }
+    } */
     .up_banner__title {
         line-height: 65px;
-        margin-bottom: 135px;
+        margin-bottom: 25px;
     }
     .up_banner {
         margin-bottom: 50px;
