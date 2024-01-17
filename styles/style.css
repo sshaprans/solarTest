@@ -12,9 +12,9 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-body{
+/* body{
     overflow-x: hidden;
-}
+} */
 
 .container{
     width: 100%;
@@ -293,10 +293,10 @@ transition: width 0.2s 0.15s linear, height 0.15s linear, opacity 0s 0.45s;
     content: "";
     background-color: transparent;
     position: absolute;
-    width: 111px;
-    height: 60px;
+    width: 129px;
+    height: 33px;
     top: -30px;
-    left: 317px;
+    left: 307px;
 }
 .nav__category--services::before{
     content: "";
@@ -899,10 +899,11 @@ transition: width 0.2s 0.15s linear, height 0.15s linear, opacity 0s 0.45s;
     background-color: var(--grey-text);
     padding: 15px 0;
 }
-.footer__down>.container{
+.footer__down{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
 }
 .footer__down__link{
     color: var(--black-color);
@@ -1393,7 +1394,8 @@ form>textarea{
         font-size: 14px;
     }
     .footer__down {
-        padding: 10px 0;
+        padding: 5px;
+        gap: 20px;
     }
     .servisec_btn__arr::after,
     .servisec_btn__span::before  {
@@ -1517,7 +1519,12 @@ form>textarea{
 }
 @media (max-width: 700px){
     .header__nav__link {
-        margin: 0
+        margin: 0;
+        width: 100%;
+        color: var(--grey-text);
+        font-size: 22px;
+        font-weight: 600;
+        line-height: normal;
     }
     .btn span {
         width: 100%;
@@ -1539,8 +1546,14 @@ form>textarea{
         padding-right: 0;
     }
     .header__nav {
-        top: 129%;
-        right: -16px;
+        background-color: #fff;
+        box-shadow: 0px 7px 62.4px 0px rgba(0, 0, 0, 0.07);
+        padding: 30px 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        top: 59px;
+        right: -19px;
     }
     .services__img {
         width: 40%;
@@ -1714,6 +1727,12 @@ form>textarea{
     }
     .top_swiper {
         margin-bottom: 50px;
+    }
+    .form__page__submit {
+        padding: 10px 30px;
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: 600;
     }
 
 }

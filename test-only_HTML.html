@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>test only html</title>
+</head>
+<style>
+    :root{
+    --blue: #4C9DE0;
+    --green: #9DE04C;
+    --grey: #F5F6F7;
+    --black: #333333;
+    --black-text: #292422;
+    --yellow: #F5ED32;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'circular', sans-serif;
+    color: var(--black-text);
+}
+button{
+    border: none;
+}
+img{
+    width: 100%;
+}
+body{
+    background-color: #fff;
+}
+.grey{
+    filter: grayscale(1);
+}
+
+/*block 1*/
+.banner{
+    background-color: var(--grey);
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    transition: all .3s ease-in-out;
+    margin-bottom: 50px;
+}
+.banner__content{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.banner__title{
+    text-transform: uppercase;
+    font-size: 46px;
+    font-weight: 800;
+    color: var(--green);
+}
+.banner__text{
+    font-size: 22px;
+    /*backdrop-filter: blur(10px);*/
+}
+.banner__buttons{
+    display: flex;
+    gap: 20px;
+}
+.btn,
+.link{
+    width: fit-content;
+    padding: 15px 20px;
+    cursor: pointer;
+    background-color: var(--blue);
+    color: #fff;
+    font-size: 20px;
+    /*font-weight: 500;*/
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+.btn:hover,
+.link:hover{
+    background-color: #fff;
+    color: var(--blue);
+}
+
+
+
+/* block 2*/
+.size{
+    padding: 30px 10px;
+    margin-bottom: 50px;
+    border-left: 5px solid var(--green);
+    border-right: 5px solid var(--green);
+
+}
+.section__title{
+    text-align: center;
+    background-color: var(--black);
+    text-transform: uppercase;
+    font-size: 46px;
+    font-weight: 800;
+    color: var(--green);
+    margin-bottom: 90px;
+
+}
+.size__boxes{
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.size__box{
+    width: calc(100% / 4 - 30px);
+    position: relative;
+    padding: 80px 20px 20px 20px;
+    background-color: var(--grey);
+    transition: all .3s ease-in-out;
+}
+.size__box:hover{
+    scale: 1.1;
+    transform: translateY(-5px);
+}
+.size__box:hover>.size__letter{
+    color: var(--black-text);
+}
+.size__box:hover>.size__num,
+.size__box:hover>.size__num span{
+    color: var(--green);
+}
+.size__letter{
+    text-transform: uppercase;
+    color: var(--green);
+    font-weight: 900;
+    font-size: 140px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    transition: all .2s ease-in-out;
+
+}
+.size__num{
+    color: var(--black-text);
+    font-size: 22px;
+    font-weight: 800;
+    transition: all .2s ease-in-out;
+
+}
+.size__num > span{
+    font-style: italic;
+}
+
+/*block3*/
+
+.map{
+    padding-left: 10px;
+    border-left: 5px solid var(--black);
+
+}
+.map__boxes{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+    position: relative;
+    padding: 50px;
+
+}
+
+.map__boxes::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    background-image: url("https://images.prom.ua/4323965952_w600_h600_4323965952.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+.map__boxes *{
+    opacity: 1;
+}
+.section__title--block3{
+    margin: 0;
+}
+.map__box{
+    width: calc(100% / 3 - 40px);
+    text-align: center;
+}
+.map__title{
+    font-size: 42px;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 20px 0;
+}
+.map__img{
+    margin-bottom: -40px;
+    transition: all .3s ease-in-out;
+}
+.map__img:hover{
+    scale: 1.05;
+}
+.map__img:hover ~ .map__num{
+    background-color: var(--black-text);
+    color: var(--yellow);
+}
+.map__num{
+    display: inline-block;
+    background-color: var(--yellow);
+    font-weight: 700;
+    font-size: 42px;
+    padding: 13px 30px;
+    border-radius: 100%;
+    margin-top: -38px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.map__num--1{
+    padding: 13px 33px;
+}
+
+.map__text{
+    font-size: 22px;
+}
+@media (max-width: 1350px) {
+    .size__letter{
+        font-size: 130px;
+    }
+    .size__box {
+        padding: 70px 20px 20px 20px;
+    }
+}
+@media(max-width: 1250px){
+    .banner__title,
+    .section__title,
+    .map__title{
+        font-size: 36px;
+    }
+    .banner__text,
+    .map__text {
+        font-size: 18px;
+    }
+    .btn, .link{
+        font-size: 18px;
+    }
+    .size__letter {
+        font-size: 110px;
+        bottom: 30px;
+    }
+    .size__box {
+        padding: 60px 20px 20px 20px;
+    }
+}
+@media (max-width: 1140px) {
+    .banner__title, .section__title, .map__title,.map__num {
+        font-size: 32px;
+    }
+    .banner__content {
+        padding: 25px;
+        gap: 25px;
+    }
+    .section__title {
+        margin-bottom: 60px;
+    }
+    .section__title--block3 {
+        margin: 0;
+    }
+    .link{
+        display: none;
+    }
+    .map__num {
+        padding: 13px 25px;
+    }
+    .map__num--1 {
+         padding: 13px 28px;
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 1100px) {
+    .size__boxes{
+        gap: 60px 50px;
+
+    }
+    .size__box{
+        width: calc(100% / 2 - 50px);
+    }
+    .map__img {
+        margin-bottom: -10px;
+    }
+}
+@media (max-width: 920px) {
+    .banner{
+        flex-direction: column;
+    }
+    .map__boxes{
+        padding: 25px;
+    }
+    .map__box{
+        width: calc(100% / 2 - 30px)
+    }
+    .map__boxes::before {
+        background-size: cover;
+    }
+}
+@media (max-width: 620px) {
+    .banner__title, .section__title, .map__title, .map__num {
+        font-size: 28px;
+    }
+    .banner__text, .map__text, .btn,
+    .size__num{
+        font-size: 16px;
+    }
+    .size__box, .map__box {
+        width: 70%;
+    }
+}
+@media (max-width: 450px) {
+    .size__box, .map__box {
+        width: 100%;
+    }
+    .map__boxes {
+         padding: 15px;
+    }
+
+}
+</style>
+<body>
+    <section class="banner">
+        <div class="banner__content">
+            <h1 class="banner__title">Дерев'яна карта світу на стіну</h1>
+            <p class="banner__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur assumenda consequatur deleniti dolorem exercitationem minima nesciunt nisi officiis perferendis perspiciatis quibusdam, rem temporibus ullam vitae, voluptas! Adipisci enim laborum totam.
+            </p>
+            <div class="banner__buttons">
+                <button class="btn">Клікабельна кнопка</button>
+                <a class="link" href="./catalog.html">
+                    Перейти до каталогу
+                </a>
+
+            </div>
+        </div>
+        <img src="https://images.prom.ua/4323965952_w600_h600_4323965952.jpg" alt="banner img">
+    </section>
+
+    <article class="size">
+        <h3 class="section__title">Карта світу з дерева: доступні розміри</h3>
+        <div class="size__boxes">
+            <div class="size__box">
+                <h5 class="size__letter">
+                    m
+                </h5>
+                <p class="size__num">
+                    <span>100x60</span> cm
+                </p>
+            </div>
+            <div class="size__box">
+                <h5 class="size__letter">
+                    L
+                </h5>
+                <p class="size__num">
+                    <span>170x60</span> cm
+                </p>
+            </div>
+            <div class="size__box">
+                <h5 class="size__letter">
+                    xl
+                </h5>
+                <p class="size__num">
+                    <span>200x120</span> cm
+                </p>
+            </div>
+            <div class="size__box">
+                <h5 class="size__letter">
+                    xxl
+                </h5>
+                <p class="size__num">
+                    <span>300x170</span> cm
+                </p>
+            </div>
+        </div>
+    </article>
+
+    <article class="map">
+        <h3 class="section__title section__title--block3">Деревяна карта світу: варіанти гравірування</h3>
+        <div class="map__boxes">
+            <div class="map__box">
+                <h5 class="map__title">
+                    pure
+                </h5>
+                <img class="map__img" src="https://images.prom.ua/4331904596_w600_h600_4331904596.jpg" alt="map">
+                <span class="map__num map__num--1">1</span>
+                <p class="map__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cumque eligendi laudantium magnam modi nesciunt numquam officiis quasi quo tenetur! Aliquid aperiam architecto, at deleniti excepturi odio quo voluptates voluptatibus.
+                </p>
+            </div>
+            <div class="map__box">
+                <h5 class="map__title">
+                    primary
+                </h5>
+                <img class="map__img" src="https://images.prom.ua/4331904596_w600_h600_4331904596.jpg" alt="map">
+                <span class="map__num">2</span>
+                <p class="map__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cumque eligendi laudantium magnam modi nesciunt numquam officiis quasi quo tenetur! Aliquid aperiam architecto, at deleniti excepturi odio quo voluptates voluptatibus.
+                </p>
+            </div>
+            <div class="map__box">
+                <h5 class="map__title">
+                    top 1
+                </h5>
+                <img class="map__img" src="https://images.prom.ua/4331904596_w600_h600_4331904596.jpg" alt="map">
+                <span class="map__num">3</span>
+                <p class="map__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cumque eligendi laudantium magnam modi nesciunt numquam officiis quasi quo tenetur! Aliquid aperiam architecto, at deleniti excepturi odio quo voluptates voluptatibus.
+                </p>
+            </div>
+        </div>
+
+    </article>
+
+
+
+    <script>
+        const btn = document.querySelector(".btn");
+        const banner = document.querySelector(".banner");
+
+        btn.addEventListener('click', () =>{
+            banner.classList.toggle('grey')
+        })
+    </script>
+</body>
+</html>

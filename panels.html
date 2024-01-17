@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
-    <title>solar hub</title>
+    <link rel="stylesheet" href="./styles/pages.css">
+    <title>panels</title>
 </head>
 <body>
     <header id="header">
@@ -34,7 +35,7 @@
             </a>                    
             <ul class="header__nav">
                 <li class="header__nav__item">
-                    <a class="header__nav__link btn btn-3 hover-border-3" href="./index.html">
+                    <a class="header__nav__link btn btn-3 hover-border-3" href="#footer">
                         <span>Головна</span>
                     </a>
                 </li> 
@@ -44,7 +45,7 @@
                     </a>
                     <ul class="nav__category">
                         <li class="nav__category__item">
-                            <a class="nav__category__link" href="./panels.html" blanck>
+                            <a class="nav__category__link" href="#" blanck>
                                 <img  class="nav__category__img" src="./img/category/panel.png" alt="panel">
                                 <p class="nav__category__title">Сонячні панелі</p>
                             </a>
@@ -56,7 +57,7 @@
                             </a>
                         </li>
                         <li class="nav__category__item">
-                            <a class="nav__category__link" href="./hybrid.html" blanck>
+                            <a class="nav__category__link" href="#" blanck>
                                 <img  class="nav__category__img" src="./img/category/gibrid.png" alt="inzh">
                                 <p class="nav__category__title">Гібридні рішення</p>
                             </a>
@@ -101,468 +102,118 @@
     <section class="main">
         <section class="up_banner" style="background-image: url(./img/banner_bg_black.svg);">
             <div class="container">
-                <div class="up_banner__wrapper">
+                <div class="up_banner__wrapper brand-description__wrapper--panels">
                     <article class="up_banner__content element_animation element_animation--left" >
                         <h1 class="up_banner__title">
-                            Відкрийте
-                            Потужність
-                            <span>
-                                Сонця
-                            </span>
+                            <span>Енергія</span> для
+                            кожного
                         </h1>
-                        <p class="up_banner__text">
-                            Революційні рішення ля вашого енергетичного
-                            майбутнього від Solar Hub 
-                        </p>
-                        <a class="banner_btn modal-btn-js btn btn-1 hover-filled-slide-right"><span class="">Зв'язатись</span></a>
+                        <svg width="292" height="55" viewBox="0 0 292 55" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <rect width="292" height="55" fill="url(#pattern0)"/>
+                            <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_163_607" transform="scale(0.00214133 0.0113685)"/>
+                            </pattern>
+                            <image id="image0_163_607" width="467" height="88" xlink:href="data:image/png;base64,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"/>
+                            </defs>
+                            </svg>
+                            
+                        <a class="banner_btn banner_btn--panels modal-btn-js btn btn-1 hover-filled-slide-right"><span class="">Зв'язатись</span></a>
                     </article>
                 </div>
             </div>
             <section class="up_banner__img_container element_animation element_animation--right">
-                <img class="up_banner__img" src="./img/main_house 2.png" alt="main house">
+                <img class="up_banner__img up_banner__img--goods-page" src="./img/pages/panels/banenr_panels.png" alt="banner">
             </section>
         </section>
 
-
-        <section class="services_home_wrapper">
+        <section class="brand-description">
             <div class="container">
-                <section class="services__home">
-                    <div class="bg_home" style="background-image: url(./img/services_bg_home.svg);"></div>
-                    <img class="services__img element_animation element_animation--down" src="./img/services_home.png" alt="home">
-                    <article class="services__content element_animation element_animation--up--x2">
-                        <h3 class="services__title">
-                            Для дому
-                        </h3>
-                        <ul class="services__list">
-                            <li>
-                                <p class="services__list__text">Підключення до зеленого тарифу</p>    
-                            </li>
-                            <li>
-                                <p class="services__list__text">Автономні системи для незалежності
-                                    від загального електромережевого
-                                    постачання</p>    
-                            </li>
-                            <li>
-                                <p class="services__list__text">Діапазон потужностей
-                                    від 5 до 30 кВт.</p>    
-                            </li>
-                        </ul>
-                        <a class="servisec_btn modal-btn-js btn btn-2 hover-slide-right"><div class="servisec_btn__span"></div><span class="">Детальніше</span> <div class="servisec_btn__arr"></div></a>
-                    </article>
-                </section>
-            </div>
-        </section>
-        <section class="services_corp_wrapper">
-            <div class="container">
-                <section class="services__corp">
-                    <article class="services__content element_animation element_animation--up--x2">
-                        <h3 class="services__title">
-                            Для підприємства
-                        </h3>
-                        <ul class="services__list">
-                            <li>
-                                <p class="services__list__text">
-                                    Енергія для власного споживання
-                                </p>    
-                            </li>
-                            <li>
-                                <p class="services__list__text">
-                                    Гібридні системи для максимальної
-                                    ефективності 
-                                </p>    
-                            </li>
-                            <li>
-                                <p class="services__list__text">
-                                    Високоефективні сонячні рішення
-                                    з потужністю від 50 кВТ i вище.
-                                </p>    
-                            </li>
-                        </ul>
-                        <a class="servisec_btn modal-btn-js btn btn-2 hover-slide-right"><div class="servisec_btn__span"></div><span class="">Детальніше</span><div class="servisec_btn__arr"></div></a>
-                    </article>
-                    <img class="services__img services_img--cor element_animation element_animation--down" src="./img/services_cor.png" alt="cor">
-                </section>
-            </div>
-        </section>
-
-        <section class="advantages_wrapper">
-            <div class="container">
-                <section class="advantages_boxes">
-                    <section class="advantages_box" >
-                        <img class="advantages_bg element_animation element_animation--right" src="./img/advantages_bg.jpg" alt="advantages_bg">
-                        <article class="advantages_box__content element_animation element_animation--light">
-                            <svg width="160" height="100" viewBox="0 0 160 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_211_175)">
-                                <path d="M21.451 25.7979L26.5295 44.9549H5.20844L0 25.7979H21.451Z" fill="#010101"/>
-                                <path d="M49.9187 44.9549H29.9296L24.8511 25.7979H44.851L49.9187 44.9549Z" fill="#010101"/>
-                                <path d="M74.1091 44.9549H53.3295L48.251 25.7979H69.0306L74.1091 44.9549Z" fill="#010101"/>
-                                <path d="M27.5366 48.7871L31.0775 62.1204H9.87554L6.24805 48.7871H27.5366Z" fill="#010101"/>
-                                <path d="M50.9364 48.7871L54.4664 62.1204H34.4773L30.9473 48.7871H50.9364Z" fill="#010101"/>
-                                <path d="M75.1164 48.7871L78.6573 62.1204H57.8777L54.3477 48.7871H75.1164Z" fill="#010101"/>
-                                <path d="M32.0844 65.9512L35.9284 80.4467H14.8673L10.9258 65.9512H32.0844Z" fill="#010101"/>
-                                <path d="M55.4843 65.9512L59.3283 80.4467H39.3284L35.4951 65.9512H55.4843Z" fill="#010101"/>
-                                <path d="M79.6643 65.9512L83.5084 80.4467H62.7396L58.8955 65.9512H79.6643Z" fill="#010101"/>
-                                <path d="M107.439 80.4467H86.9084L83.0752 65.9512H103.497L107.439 80.4467Z" fill="#010101"/>
-                                <path d="M36.9462 84.2783L41.1043 99.9999H20.1839L15.9067 84.2783H36.9462Z" fill="#010101"/>
-                                <path d="M60.3358 84.2783L64.5047 99.9999H44.5156L40.3467 84.2783H60.3358Z" fill="#010101"/>
-                                <path d="M84.5262 84.2783L88.6843 99.9999H67.9155L63.7466 84.2783H84.5262Z" fill="#010101"/>
-                                <path d="M112.756 99.9999H92.0952L87.9263 84.2783H108.478L112.756 99.9999Z" fill="#010101"/>
-                                <path d="M111.326 33.04H95.2134L98.581 45.4794H114.629L111.326 33.04Z" fill="#F8BC17"/>
-                                <path d="M110.308 29.2084L107.211 17.5098H91.0229L94.1848 29.2084H110.308Z" fill="#F8BC17"/>
-                                <path d="M74.1743 29.2084H90.7741L87.6122 17.5098H70.9907L74.1743 29.2084Z" fill="#F8BC17"/>
-                                <path d="M91.8132 33.04H75.2134L78.5918 45.4794H95.17L91.8132 33.04Z" fill="#F8BC17"/>
-                                <path d="M105.977 0L109.605 13.6782H125.815L122.198 0H105.977Z" fill="#F8BC17"/>
-                                <path d="M118.906 61.6222L115.636 49.3105H99.6206L102.945 61.6222H118.906Z" fill="#F8BC17"/>
-                                <path d="M129.929 29.2084L126.832 17.5098H110.611L113.719 29.2084H129.929Z" fill="#F8BC17"/>
-                                <path d="M89.9836 13.6782H106.194L102.577 0H86.2803L89.9836 13.6782Z" fill="#F8BC17"/>
-                                <path d="M152.106 33.04H134.347L137.65 45.4794H155.495L152.106 33.04Z" fill="#F8BC17"/>
-                                <path d="M96.2099 49.3105H79.6426L82.9885 61.6222H99.5343L96.2099 49.3105Z" fill="#F8BC17"/>
-                                <path d="M86.5725 13.6782L82.8801 0H66.2261L69.951 13.6782H86.5725Z" fill="#F8BC17"/>
-                                <path d="M138.668 49.3105L141.927 61.6222H159.881L156.535 49.3105H138.668Z" fill="#F8BC17"/>
-                                <path d="M114.726 33.04L118.029 45.4794H134.25L130.947 33.04H114.726Z" fill="#F8BC17"/>
-                                <path d="M135.257 49.3105H119.047L122.306 61.6222H138.527L135.257 49.3105Z" fill="#F8BC17"/>
-                                <path d="M129.226 13.6782H146.843L143.118 0H125.598L129.226 13.6782Z" fill="#F8BC17"/>
-                                <path d="M130.232 17.5098L133.34 29.2084H151.066L147.883 17.5098H130.232Z" fill="#F8BC17"/>
-                                </g>
-                                <defs>
-                                <clipPath id="clip0_211_175">
-                                <rect width="159.881" height="100" fill="white"/>
-                                </clipPath>
-                                </defs>
-                                </svg>
-                                
-                            <h5 class="advantages__title">
-                                Роздрібна торгівля
-                            </h5>
-                            <p class="advantages__desc">
-                                Найкраще обладнання від Китайських
-                                виробників
-                            </p>
-                            <ul class="advantages__list">
-                                <li>
-                                    <p class="advantages__text">
-                                        Сонячні панелі
-                                    </p>
-                                </li>
-                                <li>
-                                    <p class="advantages__text">
-                                        Обладнання та окремі комплектуючі
-                                    </p>
-                                </li>
-                                <li>
-                                    <p class="advantages__text">
-                                        Замовлення від однієї одиниці
-                                    </p>
-                                </li>
-                            </ul>
-                        </article>
-                    </section>
-                    <section class="advantages_box" >
-                        <img class="advantages_bg element_animation element_animation--right" src="./img/advantages_bg.jpg" alt="advantages_bg">
-                        <article class="advantages_box__content element_animation element_animation--light">
-                            <svg width="143" height="100" viewBox="0 0 143 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_211_207)">
-                                <path d="M106.899 55.7792C119.496 55.7792 129.708 46.0012 129.708 33.9394C129.708 21.8776 119.496 12.0996 106.899 12.0996C94.3018 12.0996 84.0898 21.8776 84.0898 33.9394C84.0898 46.0012 94.3018 55.7792 106.899 55.7792Z" fill="#F8BC17"/>
-                                <path d="M112.701 67.4146L111.962 63.1078C115.913 62.4788 119.645 61.1509 123.039 59.1591L125.42 62.8806C121.515 65.1695 117.236 66.6982 112.701 67.4146ZM134.197 55.5949L130.684 52.8081C133.248 49.8554 135.146 46.5183 136.35 42.8754L140.702 44.1945C139.324 48.3703 137.135 52.2054 134.197 55.5949ZM71.7273 38.1143C71.627 37.3194 71.554 36.5157 71.5083 35.712C71.3168 32.1477 71.6999 28.5922 72.6579 25.1502L77.0646 26.2772C76.2253 29.2736 75.8877 32.3748 76.061 35.4761C76.0975 36.175 76.1614 36.8738 76.2526 37.5727L71.7273 38.1056V38.1143ZM142.335 33.1785L137.773 33.2746C137.773 32.9776 137.755 32.6806 137.737 32.3836C137.545 28.863 136.706 25.4385 135.255 22.2062L139.443 20.4765C141.112 24.1806 142.07 28.1117 142.289 32.1477C142.308 32.4884 142.317 32.8291 142.326 33.1698L142.335 33.1785ZM81.2524 17.4626L77.4661 15.0253C78.3967 13.6975 79.4368 12.422 80.559 11.2339C82.4932 9.18099 84.6646 7.36392 87.0367 5.8264L89.5914 9.44306C87.5294 10.7797 85.6317 12.3696 83.9438 14.1605C82.9676 15.2 82.0553 16.3182 81.2432 17.4714L81.2524 17.4626ZM129.781 14.0644C129.088 13.3305 128.339 12.6229 127.573 11.959C125.383 10.072 122.938 8.49959 120.32 7.28529L122.3 3.35413C125.319 4.74314 128.12 6.55148 130.629 8.71798C131.514 9.48674 132.372 10.2992 133.166 11.1378L129.79 14.0731L129.781 14.0644ZM98.7971 5.39834L97.6019 1.17889C101.981 0.0432221 106.625 -0.280007 111.132 0.235412L110.594 4.56843C106.662 4.12289 102.62 4.40244 98.7971 5.3896V5.39834Z" fill="#F8BC17"/>
-                                <path d="M49.3106 59.0114H26.0728C25.9633 59.0114 25.8629 58.9415 25.8355 58.8454L20.8175 43.8633C20.7628 43.7061 20.8905 43.5488 21.0548 43.5488H44.2926C44.4021 43.5488 44.5025 43.6187 44.5298 43.7148L49.5478 58.6969C49.6026 58.8542 49.4748 59.0114 49.3106 59.0114Z" fill="black"/>
-                                <path d="M77.6939 59.0114H54.4561C54.3466 59.0114 54.2462 58.9415 54.2188 58.8454L49.2008 43.8633C49.1461 43.7061 49.2738 43.5488 49.4381 43.5488H72.6759C72.7854 43.5488 72.8858 43.6187 72.9131 43.7148L77.9311 58.6969C77.9859 58.8542 77.8581 59.0114 77.6939 59.0114Z" fill="black"/>
-                                <path d="M62.4761 99.9997H39.2383C39.1288 99.9997 39.0284 99.9298 39.0011 99.8337L33.9831 84.8516C33.9283 84.6944 34.0561 84.5371 34.2203 84.5371H57.4581C57.5676 84.5371 57.668 84.607 57.6954 84.7031L62.7134 99.6852C62.7681 99.8424 62.6404 99.9997 62.4761 99.9997Z" fill="black"/>
-                                <path d="M90.8687 99.9997H67.6309C67.5214 99.9997 67.421 99.9298 67.3936 99.8337L62.3757 84.8516C62.3209 84.6944 62.4486 84.5371 62.6129 84.5371H85.8507C85.9602 84.5371 86.0606 84.607 86.0879 84.7031L91.1059 99.6852C91.1607 99.8424 91.0329 99.9997 90.8687 99.9997Z" fill="black"/>
-                                <path d="M119.261 99.9997H96.0234C95.9139 99.9997 95.8136 99.9298 95.7862 99.8337L90.7682 84.8516C90.7135 84.6944 90.8412 84.5371 91.0054 84.5371H114.243C114.353 84.5371 114.453 84.607 114.481 84.7031L119.499 99.6852C119.553 99.8424 119.426 99.9997 119.261 99.9997Z" fill="black"/>
-                                <path d="M55.898 79.5055H32.6602C32.5507 79.5055 32.4503 79.4357 32.4229 79.3396L27.4049 64.3575C27.3502 64.2002 27.4779 64.043 27.6422 64.043H50.88C50.9895 64.043 51.0899 64.1129 51.1172 64.209L56.1352 79.191C56.19 79.3483 56.0622 79.5055 55.898 79.5055Z" fill="black"/>
-                                <path d="M84.2813 79.5055H61.0435C60.934 79.5055 60.8336 79.4357 60.8062 79.3396L55.7883 64.3575C55.7335 64.2002 55.8612 64.043 56.0255 64.043H79.2633C79.3728 64.043 79.4732 64.1129 79.5005 64.209L84.5185 79.191C84.5733 79.3483 84.4455 79.5055 84.2813 79.5055Z" fill="black"/>
-                                <path d="M112.674 79.5055H89.436C89.3266 79.5055 89.2262 79.4357 89.1988 79.3396L84.1808 64.3575C84.1261 64.2002 84.2538 64.043 84.418 64.043H107.656C107.765 64.043 107.866 64.1129 107.893 64.209L112.911 79.191C112.966 79.3483 112.838 79.5055 112.674 79.5055Z" fill="black"/>
-                                <path d="M6.77624 99.7294H0.334961L18.8742 43.54H25.3154L6.77624 99.7294Z" fill="black"/>
-                                <path d="M106.087 59.0114H82.8491C82.7396 59.0114 82.6393 58.9415 82.6119 58.8454L77.5939 43.8633C77.5392 43.7061 77.6669 43.5488 77.8311 43.5488H101.069C101.178 43.5488 101.279 43.6187 101.306 43.7148L106.324 58.6969C106.379 58.8542 106.251 59.0114 106.087 59.0114Z" fill="black"/>
-                                </g>
-                                <defs>
-                                <clipPath id="clip0_211_207">
-                                <rect width="142" height="100" fill="white" transform="translate(0.334961)"/>
-                                </clipPath>
-                                </defs>
-                                </svg>
-                                                               
-                            <h5 class="advantages__title">
-                                Станція під ключ
-                            </h5>
-                            <p class="advantages__desc">
-                                Комплексне рішення для вашого випадку
-                            </p>
-                            <ul class="advantages__list">
-                                <li>
-                                    <p class="advantages__text">
-                                        Індивідуальні сонячні рішення
-                                    </p>
-                                </li>
-                                <li>
-                                    <p class="advantages__text">
-                                        Гібридні системи
-                                    </p>
-                                </li>
-                                <li>
-                                    <p class="advantages__text">
-                                        Підключення до облЕнерго
-                                    </p>
-                                </li>
-                            </ul>
-                        </article>
-                    </section>
-                    <section class="advantages_box" >
-                        <img class="advantages_bg element_animation element_animation--right" src="./img/advantages_bg.jpg" alt="advantages_bg">
-                        <article class="advantages_box__content element_animation element_animation--light">
-                            <svg width="135" height="100" viewBox="0 0 135 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_211_220)">
-                                <path d="M89.7131 50.5445V59.1864L76.8986 62.0632C76.1054 65.9027 74.5305 69.4213 72.627 72.6305L79.7424 83.8282L73.7261 89.9142L62.6564 82.7164C59.4953 84.8024 56.0056 86.2351 52.2099 87.0374L49.366 100H40.823L37.9791 87.0374C34.1835 86.2351 30.7051 84.6305 27.5326 82.7164L16.4516 89.9142L9.9594 83.8282L17.0748 72.6305C15.0127 69.4328 13.5964 65.9142 12.8033 62.0632L-0.0112305 59.1864V50.5445L12.8033 47.6677C13.5964 43.8282 15.1826 40.3096 17.0748 37.1004L9.9594 25.7422L15.9758 19.6563L27.0568 26.854C30.2179 24.768 33.6963 23.3354 37.5032 22.5331L40.3471 9.57031H48.8902L51.734 22.5331C55.5297 23.3354 59.0081 24.9285 62.1805 26.854L73.2615 19.6563L79.5952 25.7422L72.4797 36.9399C74.5419 40.1376 75.9581 43.6677 76.7513 47.5073L89.7244 50.5445H89.7131ZM66.9279 54.8654C66.9279 42.5445 56.9573 32.4586 44.9359 32.4586C32.9145 32.4586 22.7852 42.5445 22.7852 54.8654C22.7852 67.1864 32.7559 77.1119 44.9359 77.1119C57.1159 77.1119 66.9279 67.1864 66.9279 54.8654Z" fill="#010101"/>
-                                <path d="M118.628 45.8457H134.921L122.378 57.7082L118.628 45.8457Z" fill="#F8BC17"/>
-                                <path d="M113.971 42.4069L119.104 58.6705H55.4615C55.065 58.6705 54.7137 58.4069 54.6004 58.0287L36.574 1.20344C36.3927 0.60745 36.8233 0 37.4464 0H120.882C121.279 0 121.63 0.26361 121.755 0.641834L135 42.4069H113.971Z" fill="#F8BC17"/>
-                                <path d="M113.212 13.0546H56.5608L55.4731 9.61621H112.124L113.212 13.0546Z" fill="white"/>
-                                <path d="M116.487 23.3693H59.8353L58.7476 19.9424C58.7476 19.9424 58.7816 19.9424 58.8042 19.9424H115.399L116.487 23.3808V23.3693Z" fill="white"/>
-                                <path d="M120.123 34.831H63.4721L62.373 31.3926H119.024L120.123 34.831Z" fill="white"/>
-                                </g>
-                                <defs>
-                                <clipPath id="clip0_211_220">
-                                <rect width="135" height="100" fill="white"/>
-                                </clipPath>
-                                </defs>
-                                </svg>
-                            <h5 class="advantages__title">
-                                Супрвоід документації
-                            </h5>
-                            <p class="advantages__desc">
-                                Допомога на кожному етапі будівництва
-                            </p>
-                            <ul class="advantages__list">
-                                <li>
-                                    <p class="advantages__text">
-                                        Безкоштовна консультація 
-                                    </p>
-                                </li>
-                                <li>
-                                    <p class="advantages__text">
-                                        Юридична допомога
-                                    </p>
-                                </li>
-                                <li>
-                                    <p class="advantages__text">
-                                        Підключення до зеленого тарифу
-                                    </p>
-                                </li>
-                            </ul>
-                        </article>
-                    </section>
-                </section>
-            </div>
-        </section>
-
-        <section class="top_position">
-            <section class="top_swiper">
-                <h3 class="top_swiper__title element_animation element_animation--down">
-                    Топ пропозиціЇ
-                </h3>
-                <div class="shadow__swiper"></div>
-                <section class="swiper ">
-                    <div class="swiper-wrapper swiper__wrapper">
-                        <article class="swiper-slide">
-                            <img class="swiper__slde__img" src="./img/top/блок.png" alt="block">
-                            <h5 class="swiper__slide__title ">
-                                He системник 
-                            </h5>
-                            <p class="swiper__slide__comment" >
-                                Будь який коментар
-                            </p>
-                            <p class="slide__price">
-                                220 000 uah
-                            </p>
-                            <a class="top_position_btn modal-btn-js btn btn-2 hover-slide-right"><div class="servisec_btn__span"></div><span class="">Характеристика</span></a>
-                        </article>
-                        <article class="swiper-slide">
-                            <img class="swiper__slde__img" src="./img/top/battery.png" alt="battery">
-                            <h5 class="swiper__slide__title">
-                                Батарея 680-700W
-                            </h5>
-                            <p class="swiper__slide__comment" >
-                                Ціна тижня
-                            </p>
-                            <p class="slide__price">
-                                20 000 uah
-                            </p>
-                            <a class="top_position_btn modal-btn-js btn btn-2 hover-slide-right"><div class="servisec_btn__span"></div><span class="">Характеристика</span></a>
-                        </article>
-                        <article class="swiper-slide">
-                            <img class="swiper__slde__img" src="./img/top/inzh.png" alt="battery">
-                            <h5 class="swiper__slide__title">
-                                Батарея 680-700W
-                            </h5>
-                            <p class="swiper__slide__comment" >
-                                Одно чи три фазний
-                            </p>
-                            <p class="slide__price">
-                                20 000 uah
-                            </p>
-                            <a class="top_position_btn modal-btn-js btn btn-2 hover-slide-right"><div class="servisec_btn__span"></div><span class="">Характеристика</span></a>
-                        </article>
-                        <article class="swiper-slide swiper__slide">
-                            <img class="swiper__slde__img" src="./img/top/panel.png" alt="panel">
-                            <h5 class="swiper__slide__title">
-                                Панель 680-700W
-                            </h5>
-                            <p class="swiper__slide__comment" >
-                                Двухстороння
-                            </p>
-                            <p class="slide__price">
-                                120 000 uah
-                            </p>
-                            <a class="top_position_btn modal-btn-js btn btn-2 hover-slide-right"><div class="servisec_btn__span"></div><span class="">Характеристика</span></a>
-                        </article>
-                        <article class="swiper-slide">
-                            <img class="swiper__slde__img" src="./img/top/блок.png" alt="block">
-                            <h5 class="swiper__slide__title">
-                                He системник 
-                            </h5>
-                            <p class="swiper__slide__comment" >
-                                Будь який коментар
-                            </p>
-                            <p class="slide__price">
-                                220 000 uah
-                            </p>
-                            <a class="top_position_btn modal-btn-js btn btn-2 hover-slide-right"><div class="servisec_btn__span"></div><span class="">Характеристика</span></a>
-                        </article>
-                        <article class="swiper-slide">
-                            <img class="swiper__slde__img" src="./img/top/блок.png" alt="block">
-                            <h5 class="swiper__slide__title ">
-                                He системник 
-                            </h5>
-                            <p class="swiper__slide__comment" >
-                                Будь який коментар
-                            </p>
-                            <p class="slide__price">
-                                220 000 uah
-                            </p>
-                            <a class="top_position_btn modal-btn-js btn btn-2 hover-slide-right"><div class="servisec_btn__span"></div><span class="">Характеристика</span></a>
-                        </article>
-                        <article class="swiper-slide">
-                            <img class="swiper__slde__img" src="./img/top/battery.png" alt="battery">
-                            <h5 class="swiper__slide__title">
-                                Батарея 680-700W
-                            </h5>
-                            <p class="swiper__slide__comment" >
-                                Ціна тижня
-                            </p>
-                            <p class="slide__price">
-                                20 000 uah
-                            </p>
-                            <a class="top_position_btn modal-btn-js btn btn-2 hover-slide-right"><div class="servisec_btn__span"></div><span class="">Характеристика</span></a>
-                        </article>
-                        <article class="swiper-slide">
-                            <img class="swiper__slde__img" src="./img/top/inzh.png" alt="battery">
-                            <h5 class="swiper__slide__title">
-                                Батарея 680-700W
-                            </h5>
-                            <p class="swiper__slide__comment" >
-                                Одно чи три фазний
-                            </p>
-                            <p class="slide__price">
-                                20 000 uah
-                            </p>
-                            <a class="top_position_btn modal-btn-js btn btn-2 hover-slide-right"><div class="servisec_btn__span"></div><span class="">Характеристика</span></a>
-                        </article>
-                        <article class="swiper-slide swiper__slide">
-                            <img class="swiper__slde__img" src="./img/top/panel.png" alt="panel">
-                            <h5 class="swiper__slide__title">
-                                Панель 680-700W
-                            </h5>
-                            <p class="swiper__slide__comment" >
-                                Двухстороння
-                            </p>
-                            <p class="slide__price">
-                                120 000 uah
-                            </p>
-                            <a class="top_position_btn modal-btn-js btn btn-2 hover-slide-right"><div class="servisec_btn__span"></div><span class="">Характеристика</span></a>
-                        </article>
-                        <article class="swiper-slide">
-                            <img class="swiper__slde__img" src="./img/top/блок.png" alt="block">
-                            <h5 class="swiper__slide__title">
-                                He системник 
-                            </h5>
-                            <p class="swiper__slide__comment" >
-                                Будь який коментар
-                            </p>
-                            <p class="slide__price">
-                                220 000 uah
-                            </p>
-                            <a class="top_position_btn modal-btn-js btn btn-2 hover-slide-right"><div class="servisec_btn__span"></div><span class="">Характеристика</span></a>
-                        </article>
+                <section class="brand-description__wrapper">
+                    <svg class="brand-description__svg" xmlns="http://www.w3.org/2000/svg" width="152" height="146" viewBox="0 0 152 146" fill="none">
+                        <path d="M0 0H107L151.5 73L107 146H0V0Z" fill="#FDC915"/>
+                    </svg>
+                    <div class="brand-description__text-bocks">
+                        <p class="brand-description__text brand-description__text--panels">
+                            Combined with TOPCon technology and 210mm large silicon wafer, the power of Hanersun HITOUCH6N series reaches ultimate high, 700W. The 22.53% of overall module efficiency, together with nearly zero LID/LeTID effect and outstanding outdoor low Irradiation performance, maximizes the profits for customers.
+                        </p>
                     </div>
-                    <div class="swiper-pagination"></div>
                 </section>
-            </section>
+            </div>
         </section>
 
-        <section class="statistics">
+        <section class="goods">
             <div class="container">
-                <section class="statistics__wrapper">
-                    <section class="statistic__box">
-                        <svg width="98" height="165" viewBox="0 0 98 165" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_159_165)">
-                            <path d="M49 0C21.9378 0 0 21.7952 0 48.6814C0 68.946 27.827 130.943 41.5367 160.269C44.4896 166.575 53.5104 166.575 56.4577 160.269C70.173 130.943 98 68.946 98 48.6814C98 21.7952 76.0622 0 49 0ZM49 78.08C32.6555 78.08 19.4091 64.9197 19.4091 48.6814C19.4091 32.4432 32.6555 19.2885 49 19.2885C65.3445 19.2885 78.5853 32.4487 78.5853 48.6814C78.5853 64.9141 65.3389 78.08 49 78.08Z" fill="#FFE38A"/>
-                            </g>
-                            <defs>
-                            <clipPath id="clip0_159_165">
-                            <rect width="98" height="165" fill="white"/>
-                            </clipPath>
-                            </defs>
-                        </svg>
-                        <article class="statistics__text">
-                            <h3 class="statistics__num statistics__num--25" data-max="25">1</h3>
-                            <p class="statistics__val">
-                                тис. кВт
-                                на рік 
-                            </p>
-                        </article>
-                    </section>
-                    <section class="statistic__box">
-                        <svg width="121" height="166" viewBox="0 0 121 166" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_159_167)">
-                            <path d="M10.4854 52.1505C10.4854 24.1737 33.1041 1.5 60.9961 1.5C88.8939 1.5 111.512 24.1683 111.512 52.1505C111.512 80.1327 88.8883 102.806 60.9961 102.806C33.1043 102.806 10.4854 80.1275 10.4854 52.1505ZM31.7973 52.1505C31.7973 68.3147 44.8646 81.4292 60.9961 81.4292C77.1272 81.4292 90.2005 68.3151 90.2005 52.1505C90.2005 35.9854 77.1269 22.8773 60.9961 22.8773C44.865 22.8773 31.7973 35.9858 31.7973 52.1505Z" stroke="#FFD337" stroke-width="3"/>
-                            <path d="M1.52049 164.5C2.31563 135.425 26.1543 112.021 55.3311 112.021H65.6689C94.8458 112.021 118.684 135.425 119.48 164.5H97.0831C96.2995 147.812 82.5123 134.47 65.6689 134.47H55.3311C38.4877 134.47 24.7005 147.812 23.9169 164.5H1.52049Z" stroke="#FFD337" stroke-width="3"/>
-                            </g>
-                            <defs>
-                            <clipPath id="clip0_159_167">
-                            <rect width="121" height="166" fill="white"/>
-                            </clipPath>
-                            </defs>
-                        </svg>
-                        <article class="statistics__text">
-                            <h3 class="statistics__num statistics__num--85" data-max="85">1</h3>
-                            <p class="statistics__val">
-                                Задоволених
-                                клієнтів
-                            </p>
-                        </article>
-                    </section>
-                    <section class="statistic__box">
-                        <svg width="105" height="166" viewBox="0 0 105 166" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_159_170)">
-                            <path d="M52.4972 0C23.5043 0 0 23.349 0 52.1505C0 80.9519 23.5043 104.306 52.4972 104.306C81.4901 104.306 105 80.9574 105 52.1505C105 23.3435 81.4957 0 52.4972 0ZM52.4972 79.9292C37.0552 79.9292 24.5394 67.4905 24.5394 52.1505C24.5394 36.8105 37.0552 24.3773 52.4972 24.3773C67.9392 24.3773 80.4606 36.8105 80.4606 52.1505C80.4606 67.4905 67.9392 79.9292 52.4972 79.9292Z" fill="#FFE38A"/>
-                            <path d="M59.4572 112.188V140.578H41.5981V111.516C45.1118 112.255 48.7597 112.644 52.4971 112.644C54.8581 112.644 57.18 112.488 59.4572 112.188Z" fill="#FFE38A"/>
-                            <path d="M89.5243 146.997H41.5981V166H89.5243V146.997Z" fill="#FFE38A"/>
-                            <path d="M84.9421 124.198H41.5981V143.201H84.9421V124.198Z" fill="#FFE38A"/>
-                            </g>
-                            <defs>
-                            <clipPath id="clip0_159_170">
-                            <rect width="105" height="166" fill="white"/>
-                            </clipPath>
-                            </defs>
-                        </svg>
-                        <article class="statistics__text">
-                            <h3 class="statistics__num statistics__num--125" data-max="125">1</h3>
-                            <p class="statistics__val">
-                                Станцій
-                                під ключ
-                            </p>
-                        </article>
-                    </section>
-                </section>
+                <div class="goods__wrapper">
+                    <div class="goods__img">
+                        <img src="./img/pages/panels/goods_panels.png" alt="panel" />
+                    </div>
+                    <div class="goods__characteristics">
+                        <h3 class="services__title">
+                            Hitouch 6
+                        </h3>
+                        <p class="goods__characteristics__desc">
+                            Ultra-high Power
+                        </p>
+                        <ul class="services__list">
+                            <li>
+                                <p class="services__list__text">210mm TOPCon solar cell</p>    
+                            </li>
+                            <li>
+                                <p class="services__list__text">12-20 BB+ half-cut cell design</p>    
+                            </li>
+                            <li>
+                                <p class="services__list__text">High density encapsulation,0.5mm cell spacing</p>    
+                            </li>
+                            <li>
+                                <p class="services__list__text">Round wire busbars increasepower output by 2%</p>    
+                            </li>
+                            <li>
+                                <p class="services__list__text">Module power up to 700W</p>    
+                            </li>
+                            <li>
+                                <p class="services__list__text">A perfectly choice for various applications</p>    
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="goods-menu">
+            <div class="container">
+                <div class="goods-menu__wrapper">
+                    <article class="goods-menu__item">
+                        <img class="goods-menu__img" src="./img/pages/panels/panels1.png" alt="panels1">
+                        <h5 class="goods-menu__item__title">
+                            615—635W
+                        </h5>
+                        <p class="goods-menu__item__model">
+                            HN21N-60H
+                        </p>
+                        <a class="servisec_btn modal-btn-js btn btn-2 hover-slide-right"><div class="servisec_btn__span"></div><span class="">Технічний паспорт</span> <div class="servisec_btn__arr"></div></a>
+                    </article>
+                    <article class="goods-menu__item">
+                        <img class="goods-menu__img" src="./img/pages/panels/panels2.png" alt="panels1">
+                        <h5 class="goods-menu__item__title">
+                            680—700W
+                        </h5>
+                        <p class="goods-menu__item__model">
+                            HN21N-60H
+                        </p>
+                        <a class="servisec_btn modal-btn-js btn btn-2 hover-slide-right"><div class="servisec_btn__span"></div><span class="">Технічний паспорт</span> <div class="servisec_btn__arr"></div></a>
+                    </article>
+                    <article class="goods-menu__item">
+                        <img class="goods-menu__img" src="./img/pages/panels/panels3.png" alt="panels1">
+                        <h5 class="goods-menu__item__title">
+                            615—635W
+                        </h5>
+                        <p class="goods-menu__item__model">
+                            HN21N-60H
+                        </p>
+                        <a class="servisec_btn modal-btn-js btn btn-2 hover-slide-right"><div class="servisec_btn__span"></div><span class="">Технічний паспорт</span> <div class="servisec_btn__arr"></div></a>
+                    </article>
+                </div>
             </div>
         </section>
 
@@ -714,15 +365,17 @@
             <iframe class="footer__map element_animation element_animation--down" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1269.8199262963185!2d30.514232055079773!3d50.46643085776878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce4031555555%3A0x365556afaa2d4847!2z0JrQvtC90YLRgNCw0LrRgtC-0LLQsNGPINCf0LvQvtGJ0LDQtNGM!5e0!3m2!1sru!2sua!4v1704896233404!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
         <section class="footer__down">
-            <a href="/" class="footer__down__link">
-                Bci права захищені 2023 © Solar Hub
-            </a>
-            <a href="/" class="footer__down__link">
-                Політика конфіденційності
-            </a>
-            <a href="/" class="footer__down__link">
-                Портал cтвopив SS
-            </a>
+            <div class="container">
+                <a href="/" class="footer__down__link">
+                    Bci права захищені 2023 © Solar Hub
+                </a>
+                <a href="/" class="footer__down__link">
+                    Політика конфіденційності
+                </a>
+                <a href="/" class="footer__down__link">
+                    Портал cтвopив SS
+                </a>
+            </div>
         </section>
     </footer>
 
